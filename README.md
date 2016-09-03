@@ -20,7 +20,7 @@
      "cell_type": "markdown",
      "metadata": {},
      "source": [
-      "The talking-data challenge is about predicting demographics from app-usage data. Here, we provide a rough high-level overview of the final submission generation."
+      "[TalkingData](https://www.talkingdata.com/) is one of the largest mobile-service provider's in China. The [TalkingData Kaggle Competition](https://www.kaggle.com/c/talkingdata-mobile-user-demographics) is about predicting age and gender of the mobile user based on App-data. In this readme, I provide a rough high-level overview of my final submission."
      ]
     },
     {
@@ -35,7 +35,7 @@
      "cell_type": "markdown",
      "metadata": {},
      "source": [
-      "The best submission has an LB-Score of 2.2475 which gives a top 31% position in the public LB."
+      "The best submission has an [LB-Score](https://www.kaggle.com/c/talkingdata-mobile-user-demographics/leaderboard) of 2.2475 which gives a top 31% position in the public LB. The top score on the public LB was 2.155."
      ]
     },
     {
@@ -50,7 +50,7 @@
      "cell_type": "markdown",
      "metadata": {},
      "source": [
-      "This score was achieved by first partitioning the data into two patches: for about two-thirds of the devices no app usage information is available. Achieving good predictions on these devices is much harder. Therefore, our predictions are based on two steps. A single XGB classifier fitted on the dataset without events, and a single fitted on the dataset for which more detailed information are available."
+      "The prediction is performed by first partitioning the data into two patches: for about two-thirds of the devices no app usage information is available. Achieving good predictions on these devices is much harder. Therefore, my submission is based on two steps. A single XGB classifier fitted on the dataset without events, and a single XGB fitted on the dataset for which more detailed information are available."
      ]
     },
     {
@@ -65,7 +65,7 @@
      "cell_type": "markdown",
      "metadata": {},
      "source": [
-      "The competition is a multi-class classification problem. For each device, we produce a 12-dimensional vector describing the probabilities of a data point being associated to one of the given age-gender classes. The performance is measured using cross-entropy loss."
+      "The competition is a multi-class classification problem. For each device, a 12-dimensional vector describing the probabilities of a data point being associated to one of the given age-gender classes has to be provided. The performance is measured using cross-entropy loss."
      ]
     },
     {
