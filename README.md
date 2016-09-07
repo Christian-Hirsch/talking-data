@@ -3,9 +3,9 @@
 
 [TalkingData](https://www.talkingdata.com/) is one of the largest mobile-service provider's in China. The [TalkingData Kaggle Competition](https://www.kaggle.com/c/talkingdata-mobile-user-demographics) is about predicting age and gender of the mobile user based on App-data. In this readme, I provide a rough high-level overview of my final submission.
 
-## Result -- LB-Score 2.2475 -> Top 31%
+## Result -- LB-Score 2.25146 -> Top 33%
 
-My highest-scoring submission has an [LB-Score](https://www.kaggle.com/c/talkingdata-mobile-user-demographics/leaderboard) of 2.2475 which gives a top 31% position in the public LB. The top score on the public LB was 2.155.
+My highest-scoring submission has an [LB-Score](https://www.kaggle.com/c/talkingdata-mobile-user-demographics/leaderboard) of 2.25146 which gives a top 33% position in the private LB. The top score on the private LB was 2.13153.
 
 ## Method
 
